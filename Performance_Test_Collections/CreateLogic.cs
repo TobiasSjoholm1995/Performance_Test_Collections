@@ -10,16 +10,16 @@ namespace Performance_Test_Collections {
     public class CreateLogic {
 
         [Benchmark]
-        public Dictionary<int, DataObject> CreateDictionary() => createDictionary(AMOUNT_OF_ELEMENTS);
+        public Dictionary<int, DataObject> Dictionary() => createDictionary(AMOUNT_OF_ELEMENTS);
 
         [Benchmark]
-        public SortedDictionary<int, DataObject> CreateSortedDictionary() => createSortedDirectory(AMOUNT_OF_ELEMENTS);
+        public SortedDictionary<int, DataObject> SortedDictionary() => createSortedDirectory(AMOUNT_OF_ELEMENTS);
 
         [Benchmark]
-        public SortedList<int, DataObject> CreateSortedList() => createSortedList(AMOUNT_OF_ELEMENTS);
+        public SortedList<int, DataObject> SortedList() => createSortedList(AMOUNT_OF_ELEMENTS);
 
         [Benchmark]
-        public ConcurrentDictionary<int, DataObject> CreateConcurrentDictionary() => createConcurrentDictionary(AMOUNT_OF_ELEMENTS);
+        public ConcurrentDictionary<int, DataObject> ConcurrentDictionary() => createConcurrentDictionary(AMOUNT_OF_ELEMENTS);
 
         #region Test Logic
 

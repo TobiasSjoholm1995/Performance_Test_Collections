@@ -35,16 +35,16 @@ namespace Performance_Test_Collections {
         }
 
         [Benchmark]
-        public void GetDictionary() => getDictionary(AMOUNT_OF_ELEMENTS);
+        public void Dictionary() => getDictionary(AMOUNT_OF_ELEMENTS);
 
         [Benchmark]
-        public void GetSortedDictionary() => getSortedDictionary(AMOUNT_OF_ELEMENTS);
+        public void SortedDictionary() => getSortedDictionary(AMOUNT_OF_ELEMENTS);
 
         [Benchmark]
-        public void GetSortedList() => getSortedList(AMOUNT_OF_ELEMENTS);
+        public void SortedList() => getSortedList(AMOUNT_OF_ELEMENTS);
 
         [Benchmark]
-        public void GetConcurrentDictionary() => getConcurrentDictionary(AMOUNT_OF_ELEMENTS);
+        public void ConcurrentDictionary() => getConcurrentDictionary(AMOUNT_OF_ELEMENTS);
 
         #region Test Logic
 

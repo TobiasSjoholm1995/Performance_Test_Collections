@@ -10,16 +10,16 @@ namespace Performance_Test_Collections {
     public class AddLogic {
 
         [Benchmark]
-        public Dictionary<int, DataObject> AddDictionary() => addDictionary(AMOUNT_OF_ELEMENTS);
+        public Dictionary<int, DataObject> Dictionary() => addDictionary(AMOUNT_OF_ELEMENTS);
 
         [Benchmark]
-        public SortedDictionary<int, DataObject> AddSortedDictionary() => addSortedDirectory(AMOUNT_OF_ELEMENTS);
+        public SortedDictionary<int, DataObject> SortedDictionary() => addSortedDirectory(AMOUNT_OF_ELEMENTS);
 
         [Benchmark]
-        public SortedList<int, DataObject> AddSortedList() => addSortedList(AMOUNT_OF_ELEMENTS);
+        public SortedList<int, DataObject> SortedList() => addSortedList(AMOUNT_OF_ELEMENTS);
 
         [Benchmark]
-        public ConcurrentDictionary<int, DataObject> AddConcurrentDictionary() => addConcurrentDictionary(AMOUNT_OF_ELEMENTS);
+        public ConcurrentDictionary<int, DataObject> ConcurrentDictionary() => addConcurrentDictionary(AMOUNT_OF_ELEMENTS);
 
 
         #region Test Logic
