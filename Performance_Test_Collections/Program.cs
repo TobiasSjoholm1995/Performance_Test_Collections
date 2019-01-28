@@ -18,7 +18,7 @@ namespace Performance_Test_Collections {
 
             BenchmarkRunner.Run<CreateLogic>();
             BenchmarkRunner.Run<AddLogic>();
-            BenchmarkRunner.Run<ReadLogic>();
+            BenchmarkRunner.Run<GetLogic>();
 
             Console.ReadKey();
         }
